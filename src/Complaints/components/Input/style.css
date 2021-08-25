@@ -1,0 +1,29 @@
+input {
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.small {
+  width: 30%;
+}
+
+.medium {
+  width: 50%;
+}
+
+.big {
+  width: 67%;
+}
+
+
+input:hover {
+  box-shadow: 6px 7px #888888;
+  transition: 0.3s ease;
+}
+
+input:focus{
+  box-shadow: 6px 7px #888888;
+}
+
