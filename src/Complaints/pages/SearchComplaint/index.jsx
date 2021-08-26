@@ -1,23 +1,25 @@
 import React from 'react'
+import './style.css';
 // Import Components
 import Title from '../../components/Title';
 import Input from '../../components/Input';
 // Import React-Bootstrap Components
-import Button from 'react-bootstrap/Button';
+
 // Sonra bakacağım font-awesome için !!
 // import { faUser } from '@fortawesome/react-fontawesome'
 
 function SearchComplaint() {
   return (
-    <div style={{marginTop: "100px"}}>
-      <div className="container bg-secondary">
-         <Title type="h1" text="Search your complaint!" className="text-" />
+    <div className="search-page">
+      <div className=" search-container medium">
+         <Title type="h1" text="Track your complaint!" className="darkblue" />
          <div className="search-box mt-5">
-           <Input type="text" 
+            <Input type="text" 
                 placeholder="Search..." 
                 name="search"
-         />
-         <Button>Search</Button>
+                className="no-outline medium"
+            />
+            <button className="search-btn mt-2">Search</button>
          </div>
          
       </div>
