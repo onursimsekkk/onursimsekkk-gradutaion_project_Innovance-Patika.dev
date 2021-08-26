@@ -1,15 +1,13 @@
-import React from 'react';
+import React from "react";
+import "./style.css";
 
-function Title({ type, text }) {
+function Title({ type, text, className }) {
   return (
     <>
-      {
-        (type === "h1" && <h1>{text}</h1>)
-        ||
-        (type === "h2" && <h2>{text}</h2>)
-      }
+      {(type === "h1" && <h1 className={className}>{text}</h1>) ||
+       (type === "h2" && <h2 className={className}>{text}</h2>)}
     </>
-  )
+  );
 }
 
 export default Title;
