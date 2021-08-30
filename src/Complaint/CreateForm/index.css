@@ -5,6 +5,9 @@
 .details-textarea {
   width: 200px;
   height: 100px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 .container-complaint {
