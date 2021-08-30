@@ -1,0 +1,15 @@
+.modal-dialog {
+  min-width: 600px;
+  position: absolute;
+  z-index: 999;
+  margin-top: 0px !important;
+}
+
+textarea {
+  min-width: 300px;
+  min-height: 100px;
+}
+
+.darkblue {
+  color: darkblue;
+}

@@ -1,0 +1,16 @@
+.modal-dialog {
+  min-width: 500px;
+  position: absolute;
+  z-index: 999;
+  margin-top: 60px !important;
+}
+
+.check {
+  width: 250px;
+}
+
+.ticketId {
+  font-size: 16px;
+  color: brown;
+  font-weight: 500;
+}
