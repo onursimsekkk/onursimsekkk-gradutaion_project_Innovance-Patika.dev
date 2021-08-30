@@ -1,6 +1,13 @@
+import { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 
 export const Login = ({ login }) => {
+  const [adminInfo, setAdminInfo] = useState({ username: "", password: "" });
+
+  const onChangeInput = (e) => {
+    setAdminInfo({ ...adminInfo, [e.target.name]: e.target.value })
+  };
+
   return (
     <div
       className="bg-info"
@@ -27,6 +34,8 @@ export const Login = ({ login }) => {
                   name="username"
                   id="username"
                   placeholder="Write your username..."
+                  onChange={onChangeInput}
+                  value={adminInfo.username}
                 />
                 <Form.Label>Password</Form.Label>
                 <Form.Control
@@ -34,13 +43,15 @@ export const Login = ({ login }) => {
                   name="password"
                   id="password"
                   placeholder="Password..."
+                  onChange={onChangeInput}
+                  value={adminInfo.password}
                 />
               </Form.Group>
               <button
                 type="submit"
                 style={{ height: "45px" }}
-                className="submit-btn"
-                onClick={login}
+                className="btn btn-primary submit-btn"
+                onClick={(e) => login(e, adminInfo)}
               >
                 Login
               </button>
