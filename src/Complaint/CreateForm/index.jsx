@@ -70,7 +70,7 @@ export const CreateForm = memo(() => {
 
   return (
     <>
-      <div className="p-5 container-complaint">
+      <div className="p-5 container-complaint d-flex justify-content-center">
         <Card className="text-center">
           <Card.Body>
             <form onSubmit={handleSubmit(onSubmitHandler)}>
@@ -80,30 +80,35 @@ export const CreateForm = memo(() => {
                 {...register("first_name")}
                 placeholder="First Name"
                 error={errors.first_name}
+                className="d-flex justify-content-center mb-3"
               />
               <Input
                 {...register("last_name")}
                 placeholder="Last Name"
                 error={errors.last_name}
+                className="d-flex justify-content-center mb-3"
               />
               <Input
                 {...register("age")}
                 placeholder="Your Age"
                 error={errors.age}
+                className="d-flex justify-content-center mb-3"
               />
               <Input
                 {...register("user_id")}
                 placeholder="ID Number"
                 maxLength="11"
                 error={errors.user_id}
+                className="d-flex justify-content-center mb-3"
               />
               <Input
                 {...register("date")}
                 type="date"
                 error={errors.date}
+                className="d-flex justify-content-center mb-3"
               />
-              <input type="file" {...register("file")} />
-              <div className="mb-3">
+              <input type="file" {...register("file")} className="d-flex justify-content-center" />
+              <div className="mb-2">
                 <textarea
                   {...register("details")}
                   placeholder="Details"
