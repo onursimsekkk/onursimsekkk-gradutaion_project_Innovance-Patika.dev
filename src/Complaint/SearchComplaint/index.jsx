@@ -37,11 +37,14 @@ export const SearchComplaint = () => {
   return (
     <div className="search-container">
       <div className="search-input">
-        <h1 className="mb-4">SEARCH YOUR TICKET :)</h1>
-        <Input placeholder="Search..." value={searchState} onChange={search} />
-        <Button className="btn btn-md primary" onClick={searchClick}>
+        <h1 className="mb-4">TRACK YOUR COMPLAINT</h1>
+        <div className="d-flex justify-content-evenly">
+          <Input placeholder="Search..." value={searchState} onChange={search} />
+          <Button className="btn btn-md primary" onClick={searchClick} style={{height:"50px"}} >
           SEARCH
-        </Button>
+          </Button>
+        </div>
+        
         {error && <div className="error-div"> {error}</div>}
       </div>
 
