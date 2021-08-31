@@ -5,7 +5,7 @@ export const Login = ({ login }) => {
   const [adminInfo, setAdminInfo] = useState({ username: "", password: "" });
 
   const onChangeInput = (e) => {
-    setAdminInfo({ ...adminInfo, [e.target.name]: e.target.value })
+    setAdminInfo({ ...adminInfo, [e.target.name]: e.target.value });
   };
 
   return (

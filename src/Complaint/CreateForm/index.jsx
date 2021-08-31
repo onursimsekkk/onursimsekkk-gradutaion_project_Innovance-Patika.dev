@@ -15,7 +15,11 @@ const schema = yup.object().shape({
   age: yup.number().positive().integer().required(),
   user_id: yup
     .number()
-    .test('len', 'Must be exactly 11 characters', val => val.toString().length === 11)
+    .test(
+      "len",
+      "Must be exactly 11 characters",
+      (val) => val.toString().length === 11
+    )
     .transform((value) => (isNaN(value) ? undefined : value))
     .required("must be 11 characters"),
   details: yup.string().required(),
@@ -107,7 +111,11 @@ export const CreateForm = memo(() => {
                 error={errors.date}
                 className="d-flex justify-content-center mb-3"
               />
-              <input type="file" {...register("file")} className="d-flex justify-content-center" />
+              <input
+                type="file"
+                {...register("file")}
+                className="d-flex justify-content-center"
+              />
               <div className="mb-2">
                 <textarea
                   {...register("details")}
