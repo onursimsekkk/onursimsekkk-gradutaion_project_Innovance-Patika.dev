@@ -4,11 +4,7 @@ import Dashboard from "./Dashboard";
 import Complaint from "./Complaint";
 import { NavBar } from "./Navbar";
 import { initializeApp } from "firebase/app";
-import {
-  getFirestore,
-  collection,
-  getDocs
-} from "firebase/firestore/lite";
+import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
 import "firebase/firestore";
 import "./App.css";
 
@@ -30,20 +26,22 @@ const App = () => {
 
   const login = async (e, userData) => {
     e.preventDefault();
-    console.log(userData)
-     
-      const db = getFirestore();
-      const users = collection(db, "users");
-      const userDocs = await getDocs(users);
-      
-      const admins = userDocs.docs.map((doc) => doc.data());
-      const checkUser = await admins.filter(f => f.username === userData.username)
-      .filter(f => f.password === userData.password).length > 0;
-      console.log(checkUser);
-      if(checkUser) { 
-        setLogin(true);
-        history.push("/tickets");
-      }
+    console.log(userData);
+
+    const db = getFirestore();
+    const users = collection(db, "users");
+    const userDocs = await getDocs(users);
+
+    const admins = userDocs.docs.map((doc) => doc.data());
+    const checkUser =
+      (await admins
+        .filter((f) => f.username === userData.username)
+        .filter((f) => f.password === userData.password).length) > 0;
+    console.log(checkUser);
+    if (checkUser) {
+      setLogin(true);
+      history.push("/tickets");
+    }
   };
 
   const logOut = () => {
