@@ -11,11 +11,11 @@ password: bootcamp109
 Ticket Id: a42a2522-978a-4862-98e6-af946cd5e606
 Ticket Id: 710253b1-6cbb-40e4-b3f6-c9a7d2bed820
 ---
-![Proje Resmi](./public/project_img/complaint.png)
-![Proje Resmi](public/project_img/success.png)
-![Proje Resmi](public/project_img/search.png)
-![Proje Resmi](public/project_img/login.png)
-![Proje Resmi](public/project_img/detail.png)
+![Proje Resmi](public/project_img/complaint.PNG)
+![Proje Resmi](public/project_img/success.PNG)
+![Proje Resmi](public/project_img/search.PNG)
+![Proje Resmi](public/project_img/login.PNG)
+![Proje Resmi](public/project_img/detail.PNG)
 ---
 #### Genel Açıklama
 
