@@ -1,17 +1,17 @@
 ## Bitirme projesi
-### Başvuru / ticket yönetim sistemi
-[Live:](https://graduation-project-onursimsekkk.vercel.app/complaint "Ticket App")
+
+[Live](https://graduation-project-onursimsekkk.vercel.app/complaint "Ticket App")
 ---
-#### Admin Login (/login)
+### Admin Login (/login)
 
 username: kodluyoruz
 password: bootcamp109
 
-#### Search Test (/search)
+### Search Test (/search)
 Ticket Id: a42a2522-978a-4862-98e6-af946cd5e606
 Ticket Id: 710253b1-6cbb-40e4-b3f6-c9a7d2bed820
 ---
-![Proje Resmi](public/project_img/complaint.png)
+![Proje Resmi](./public/project_img/complaint.png)
 ![Proje Resmi](public/project_img/success.png)
 ![Proje Resmi](public/project_img/search.png)
 ![Proje Resmi](public/project_img/login.png)
@@ -25,7 +25,7 @@ Formu dolduran kullanıcıya başvurusunu takip edebilecegi bir kod veriliyor. K
 Kullanıcı adı ve şifre ile girilebilen bir ekrandan da yetkili kullanıcılar gelen başvuruları görüntüleyebiliyor cevaplanmamış başvurulara cevap yazıp durumunu çözüldü / iptal edildi / bekliyor vb gibi güncelleyebiliyor. Gerekirse eski kayıtlara ulaşabiliyor.
 
 
-##### Kullanılanlar
+#### Kullanılanlar
 
 - React hooks
 - React-router
