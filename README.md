@@ -4,9 +4,9 @@
 ---
 ### Admin Login (/login)
 
-#### username: kodluyoruz
-#### password: bootcamp109
-
+#### - username: kodluyoruz
+#### - password: bootcamp109
+---
 ### Search Test (/search)
 #### Ticket Id: a42a2522-978a-4862-98e6-af946cd5e606
 #### Ticket Id: 710253b1-6cbb-40e4-b3f6-c9a7d2bed820
