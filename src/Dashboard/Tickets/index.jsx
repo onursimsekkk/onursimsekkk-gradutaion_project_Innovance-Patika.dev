@@ -7,7 +7,6 @@ import {
   updateDoc,
 } from "firebase/firestore/lite";
 import { useTable } from "react-table";
-
 import "./index.css";
 import { TicketDetail } from "../TicketDetail";
 
