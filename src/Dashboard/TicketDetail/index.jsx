@@ -22,6 +22,7 @@ export const TicketDetail = ({ ticketDetail, closePopup, saveAnswer }) => {
         <p className="mt-2"><span className="text-danger">Age:</span> {ticketDetail.age}</p>
         <p className="mt-2"><span className="text-danger">ID No:</span> {ticketDetail.user_id}</p>
         <p className="mt-2"><span className="text-danger">Date:</span> {ticketDetail.date}</p>
+        <p className="mt-2"><span className="text-danger">Ticket:</span> {ticketDetail.details}</p>
         <p className="mt-2 darkblue">
           Status: <span className={ticketDetail.status ? "text-success" : "text-danger"}>{ticketDetail.status ? "Answered" : "Not Answered"}</span>
         </p>
