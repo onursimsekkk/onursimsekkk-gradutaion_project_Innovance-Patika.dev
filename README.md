@@ -1,6 +1,6 @@
 ## Bitirme projesi
 
-[Live](https://graduation-project-onursimsekkk.vercel.app/complaint "Ticket App")
+[Live](https://graduation-project-onursimsek.vercel.app/complaint "Ticket App")
 ---
 ### Admin Login (/login)
 
